@@ -1,4 +1,4 @@
-# goal: find an embedding based on RMSD similarities
+# goal: find an embedding based on RMSD (dis)similarities
 
 import numpy as np
 import pylab as pl
