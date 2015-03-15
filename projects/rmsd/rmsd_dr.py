@@ -4,6 +4,8 @@ import numpy as np
 import pylab as pl
 import numpy.random as npr
 
+pl.rcParams['image.cmap'] = 'gray'
+
 # import data
 from msmbuilder.example_datasets import AlanineDipeptide
 dataset = AlanineDipeptide().get()
@@ -35,11 +37,11 @@ pl.rc('font', family='serif')
 pl.imshow(rmsd_ala,interpolation='none')
 pl.colorbar()
 pl.title('Pairwise RMSD: Alanine dipeptide')
-pl.savefig('figures/alanine-dipeptide-rmsd.pdf')
+pl.savefig('figures/alanine-dipeptide-rmsd-gray.jpg',dpi=300)
 pl.close()
 
 pl.imshow(rmsd_fs,interpolation='none')
 pl.colorbar()
 pl.title('Pairwise RMSD: Fs peptide')
-pl.savefig('figures/fs-peptide-rmsd.pdf')
+pl.savefig('figures/fs-peptide-rmsd-gray.jpg',dpi=300)
 pl.close()
